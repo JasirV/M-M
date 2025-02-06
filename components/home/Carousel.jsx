@@ -7,7 +7,7 @@ import Image from "next/image"; // Import the Image component from Next.js
 import Img1 from "@/public/img/carouselHome/IMG_1606.JPG";
 import Img2 from "@/public/img/carouselHome/IMG_5526.JPG";
 import Img3 from "@/public/img/carouselHome/IMG_8678.JPG";
-import { InteractiveHoverButton } from "../interactive-hover-button";
+
 
 const carouselItems = [
   {
