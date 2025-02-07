@@ -4,6 +4,8 @@ import FooterOne from '@/layouts/footers/FooterOne';
 import Carousel from '@/components/home/Carousel'
 import About from '@/components/home/About'
 import Service from '@/components/home/Service'
+import Additonal from '@/components/home/Additonal'
+
 const HomeOne = () => {
   return (
     <>
@@ -11,6 +13,7 @@ const HomeOne = () => {
     <Carousel/>
     <About/>
     <Service/>
+    <Additonal/>
     </>
   );
 };
