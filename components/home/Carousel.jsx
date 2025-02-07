@@ -70,13 +70,13 @@ const Carousel = () => {
 
           {/* Centered Text */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
-            <h1 className="font-garamond md:text-8xl text-5xl font-light h-[88px] tracking-normal leading-[44px] mb-[25px] mx-[15.7px] text-center">
+            <h1 className="font-garamond md:text-8xl text-5xl font-light h-[88px] tracking-normal leading-[44px] mb-3 md:mb-[25px] mx-[15.7px] text-center">
               {item.heading}
             </h1>
             <p className="text-sm md:text-xl font-poppins">
               {item.description}
             </p>
-            <button className="md:mt-5 font-garamond mt-8 px-4 md:px-6 py-2 bg-white text-black text:sm  md:text-lg font-medium rounded-full transition-all duration-300 ease-in-out transform hover:bg-black hover:text-white  hover:scale-105 active:scale-95">
+            <button className="md:mt-5 font-garamond mt-4 px-4 md:px-6 py-2 bg-white text-black text:sm  md:text-lg font-medium rounded-full transition-all duration-300 ease-in-out transform hover:bg-black hover:text-white  hover:scale-105 active:scale-95">
               Show more
             </button>
           </div>
