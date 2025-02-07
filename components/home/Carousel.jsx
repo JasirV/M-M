@@ -70,9 +70,9 @@ const Carousel = () => {
 
           {/* Centered Text */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
-            <h1 className="font-garamond md:text-8xl text-5xl font-light h-[88px] tracking-normal leading-[44px] mb-3 md:mb-[25px] mx-[15.7px] text-center">
+            <p className="font-garamond md:text-8xl text-5xl font-light h-[88px] tracking-normal leading-[44px] mb-3 md:mb-[25px] mx-[15.7px] text-center">
               {item.heading}
-            </h1>
+            </p>
             <p className="text-sm md:text-xl font-poppins">
               {item.description}
             </p>

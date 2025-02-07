@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className='mt-10'>
         <div className='flex justify-center'>
-        <h1 className='font-garamond md:text-5xl text-xl mt-4'>About Company</h1>
+        <p className='font-garamond md:text-5xl text-xl mt-4'>About Company</p>
         </div>
     <div className="flex items-center justify-center text-2xl capitalize text-brown mt-2">
       <img src="https://moments-host.surge.sh/images/Vector%202.png" alt="Left Vector" />
