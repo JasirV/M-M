@@ -4,7 +4,7 @@ import {DockDemo} from '@/components/common/IconsDemo'
 const FooterOne = () => {
   return (
     <div className="w-full mt-5 p-2 border-t ">
-      <div className="w-full flex  justify-between px-28 font-poppins">
+      <div className="w-full flex md:flex-row flex-col text-center  justify-between md:px-28 font-poppins">
         <div className="">
           <ul className="list-none text-base leading-10">
             <li>
@@ -78,7 +78,7 @@ const FooterOne = () => {
             </ul>
         </div>
       </div>
-      <p className="text-center mt-4 font-poppins font-light">© 2025 MM Weddings® Global Inc.</p>
+      <p className="text-center mt-4 text-xs md:text-base font-poppins font-light">© 2025 MM Weddings® Global Inc.</p>
     </div>
   );
 };

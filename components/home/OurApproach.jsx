@@ -9,10 +9,10 @@ const OurApproach = () => {
       <img src="https://moments-host.surge.sh/images/Vector%201.png" alt="Right Vector" />
     </div>
     <div className='flex justify-center'>
-        <p className='font-garamond text-5xl mt-6 '>Our Approach to Wedding Photography</p>
+        <p className='font-garamond text-xl md:px-0 px-4 text-center md:text-5xl mt-6 '>Our Approach to Wedding Photography</p>
     </div>
     <div className='flex justify-center mt-5 leading-8 font-poppins mb-3 '>
-        <p className='w-3/4'>At MM Weddings, we believe in capturing the essence of your love story. Our approach combines documentary style with fine art, ensuring that every moment is recorded naturally and artistically. Our candid wedding photographers focus on real emotions, from the joyous laughter of friends and family to the tender glances shared by the bride and groom. These unposed, heartfelt moments form the heart of our work</p>
+        <p className='md:w-3/4 w-4/5 '>At MM Weddings, we believe in capturing the essence of your love story. Our approach combines documentary style with fine art, ensuring that every moment is recorded naturally and artistically. Our candid wedding photographers focus on real emotions, from the joyous laughter of friends and family to the tender glances shared by the bride and groom. These unposed, heartfelt moments form the heart of our work</p>
     </div>
     <div className='flex justify-center'>
     <div className=' w-3/4 mt-2 mb-2'>

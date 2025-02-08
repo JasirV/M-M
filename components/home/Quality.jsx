@@ -25,13 +25,13 @@ const Quality = () => {
         }}
       >
         <div className="w-full flex flex-col items-center justify-center gap-20">
-          <div className="font-garamond font-light text-6xl">
+          <div className="font-garamond font-light text:xl md:text-6xl">
             <h3>Wedding Highlights in Kerala</h3>
           </div>
-          <div className="w-full flex flex-row items-center justify-center px-20 gap-8 mx-10">
+          <div className="w-full flex flex-col md:flex-row items-center justify-center px-20 gap-8 mx-10">
             {/* Thumbnail container */}
             {[...Array(3)].map((_, index) => (
-              <div key={index} className="relative w-full h-0 pb-[20%] cursor-pointer">
+              <div key={index} className="relative w-full h-0 pb-[70%] md:pb-[20%] cursor-pointer">
                 <Image
                   src={
                     "https://digital.ihg.com/is/image/ihg/crowne-plaza-new-delhi-6332359191-4x3"
