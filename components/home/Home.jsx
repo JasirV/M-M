@@ -5,7 +5,9 @@ import Carousel from '@/components/home/Carousel'
 import About from '@/components/home/About'
 import Service from '@/components/home/Service'
 import Additonal from '@/components/home/Additonal'
-
+import Quality from '@/components/home/Quality'
+import OurApproach from '@/components/home/OurApproach'
+import WhyKerala from '@/components/home/WhyKerala'
 const HomeOne = () => {
   return (
     <>
@@ -14,6 +16,10 @@ const HomeOne = () => {
     <About/>
     <Service/>
     <Additonal/>
+    <Quality/>
+    <OurApproach/>
+    <WhyKerala/>
+    <FooterOne/>
     </>
   );
 };
