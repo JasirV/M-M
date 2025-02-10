@@ -8,6 +8,7 @@ import Additonal from '@/components/home/Additonal'
 import Quality from '@/components/home/Quality'
 import OurApproach from '@/components/home/OurApproach'
 import WhyKerala from '@/components/home/WhyKerala'
+import InstagramCarousel from '@/components/home/InstagramCarousel'
 const HomeOne = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const HomeOne = () => {
     <Quality/>
     <OurApproach/>
     <WhyKerala/>
+    <InstagramCarousel/>
     <FooterOne/>
     </>
   );
