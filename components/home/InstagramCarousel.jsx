@@ -166,7 +166,7 @@ const InstagramCarousel = () => {
   return (
     <div className="max-w-5xl mx-auto p-5">
       <h2 className="text-2xl font-semibold text-center mb-5">
-        Instagram Posts
+        Instagram Feeds
       </h2>
       <Swiper
         slidesPerView={1}
@@ -194,7 +194,7 @@ const InstagramCarousel = () => {
                   width={500} // Specify the width (adjust as needed)
                   height={300} // Specify the height (adjust as needed)
                   style={{ objectFit: "cover" }}
-                  quality={75}
+                  quality={40}
                   className="w-full h-full"
                   loading="lazy"
                   placeholder="blur"
