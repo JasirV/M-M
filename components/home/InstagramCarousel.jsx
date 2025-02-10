@@ -194,6 +194,7 @@ const InstagramCarousel = () => {
                   width={500} // Specify the width (adjust as needed)
                   height={300} // Specify the height (adjust as needed)
                   style={{ objectFit: "cover" }}
+                  quality={75}
                   className="w-full h-full"
                   loading="lazy"
                   placeholder="blur"
