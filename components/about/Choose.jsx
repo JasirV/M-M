@@ -48,7 +48,7 @@ const Choose = () => {
             src="https://moments-host.surge.sh/images/Vector%202.png"
             alt="Left Vector"
           />
-          <span className="mx-2 text-sm md:text-2xl  sm:mx-3">Why Choose MM Weddings?</span>
+          <span className="mx-2 text-sm md:text-2xl text-center  sm:mx-3">Why Choose MM Weddings?</span>
           <img
             src="https://moments-host.surge.sh/images/Vector%201.png"
             alt="Right Vector"
@@ -61,10 +61,10 @@ const Choose = () => {
               className="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center"
             >
               <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-lg font-semibold text-gray-900">
+              <h3 className="text-lg font-poppins font-semibold text-gray-900">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 mt-2">{feature.description}</p>
+              <p className="text-gray-600 font-poppins mt-2">{feature.description}</p>
             </div>
           ))}
         </div>
