@@ -3,6 +3,7 @@ import HeaderOne from '@/layouts/heders/HeaderOne'
 import HeaderSection from '@/components/about/HeaderSection'
 import Description from '@/components/about/Description'
 import Choose from '@/components/about/Choose'
+import Photographer from '@/components/about/Photographer'
 
 
 const page = () => {
@@ -12,6 +13,7 @@ const page = () => {
         <HeaderSection/>
         <Description/>
         <Choose/>
+        <Photographer/>
     </div>
   )
 }
