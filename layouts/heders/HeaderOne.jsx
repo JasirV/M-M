@@ -72,7 +72,7 @@ const HeaderOne = () => {
         <NavbarItem>
           <Dropdown>
             <DropdownTrigger>
-              <Link href="#" className="cursor-pointer">
+              <Link href="/service" className="cursor-pointer">
                 Services
               </Link>
             </DropdownTrigger>

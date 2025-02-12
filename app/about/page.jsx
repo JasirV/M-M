@@ -5,7 +5,7 @@ import Description from '@/components/about/Description'
 import Choose from '@/components/about/Choose'
 import Photographer from '@/components/about/Photographer'
 import Testimonials  from '@/components/about/testimonials'
-
+import Footer from '@/layouts/footers/FooterOne'
 
 const page = () => {
   return (
@@ -16,6 +16,7 @@ const page = () => {
         <Choose/>
         <Photographer/>
         <Testimonials/>
+        <Footer/>
     </div>
   )
 }
