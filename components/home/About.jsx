@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Img from "@/public/img/about/IMG_0809.JPG";
-
+import Link from "next/link";
 const About = () => {
   return (
     <div className='mt-10'>
@@ -27,7 +27,9 @@ const About = () => {
         <div className='md:w-7/12 w-full pl-8'>
             <h1 className='font-garamond text-2xl md:text-7xl'>Wedding Photography in Kerala</h1>
             <p className='mt-7 font-poppins md:mr-28 md:text-lg text-sm'>Celebrate your love story with wedding photography in Kerala that captures every cherished detail and emotion of your special day. MM Weddings, recognized as one of the best wedding photographers, specializes in creating timeless memories through a seamless blend of artistry and professionalism. Whether it’s candid shots, pre-wedding shoots, or cinematic videography, we ensure that your unique love story is beautifully told</p>
+            <Link href="/contact">
             <button className='font-light font-poppins text-sm mt-5 outline-black border-black border-2 px-4 py-2 md:px-6 md:py-3 shadow-sm rounded-full ease-linear hover:bg-black hover:text-white'>Book Now</button>
+            </Link>
         </div>
     </div>
         

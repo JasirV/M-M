@@ -18,12 +18,12 @@ const FooterOne = () => {
               </Link>
             </li>
             <li>
-              <Link href="/album" className="text-black hover:text-gray-700">
+              <Link href="" className="text-black hover:text-gray-700">
                 ALBUMS
               </Link>
             </li>
             <li>
-              <Link href="/faq" className="text-black hover:text-gray-700">
+              <Link href="" className="text-black hover:text-gray-700">
                 FAQ
               </Link>
             </li>
@@ -32,22 +32,22 @@ const FooterOne = () => {
         <div>
           <ul className="list-none text-base leading-10">
             <li>
-              <Link href="/blog" className="text-black hover:text-gray-700">
+              <Link href="" className="text-black hover:text-gray-700">
                 BLOG
               </Link>
             </li>
             <li>
-              <Link href="/team" className="text-black hover:text-gray-700">
+              <Link href="" className="text-black hover:text-gray-700">
                 TEAM
               </Link>
             </li>
             <li>
-              <Link href="/privacy" className="text-black hover:text-gray-700">
+              <Link href="" className="text-black hover:text-gray-700">
                 PRIVACY POLICY
               </Link>
             </li>
             <li>
-              <Link href="/terms" className="text-black hover:text-gray-700">
+              <Link href="" className="text-black hover:text-gray-700">
                 TERMS OF CONDITIONS
               </Link>
             </li>

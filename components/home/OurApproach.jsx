@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const OurApproach = () => {
@@ -16,7 +17,9 @@ const OurApproach = () => {
     </div>
     <div className='flex justify-center'>
     <div className=' w-3/4 mt-2 mb-2'>
+    <Link href='/contact' >
         <button className='px-6 py-2 rounded-full border-black border-2 hover:bg-black hover:text-white text-sm font-light font-poppins'>ENQUIRE NOW!</button>
+    </Link>
     </div>
     </div>
     </div>

@@ -26,11 +26,11 @@ const Form = () => {
   };
 
   return (
-    <div className="h-[70vh] bg-black flex justify-center items-center">
-      <div className="w-1/2 h-full">
+    <div className="md:h-[70vh] bg-black pb-5 md:pb-0 flex flex-col md:flex-row justify-center items-center">
+      <div className="md:w-1/2 w-full h-full">
         <Image src={Img} className="w-full h-full object-cover" alt="Contact" />
       </div>
-      <div className="w-1/2 flex  justify-center items-center">
+      <div className="md:w-1/2 flex w-11/12  justify-center items-center">
         <form className="  rounded-lg shadow-lg ">
           {/* Heading */}
           <h2 className="text-xs text-center text-white font-garamond  font-bold tmb-6">
@@ -38,7 +38,7 @@ const Form = () => {
           </h2>
 
           {/* Description */}
-          <p className="text-white text-3xl font-garamond mt-2 mb-6">
+          <p className="text-white text-3xl text-center font-garamond mt-2 mb-6">
             Please mention your requirements here.
           </p>
 
@@ -126,7 +126,7 @@ const Form = () => {
           <div className="flex justify-center">
           <button
             type="submit"
-            className=" text-center bg-gray-400 text-white py-2 px-4 w-1/3  font-light font-poppins hover:bg-gray-100 hover:text-black transition-colors"
+            className=" text-center bg-gray-400 text-xs md:text-lg text-white py-2 md:px-2 w-1/3  font-light font-poppins hover:bg-gray-100 hover:text-black transition-colors"
             >
             SEND MESSAGE
           </button>

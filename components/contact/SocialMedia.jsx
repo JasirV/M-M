@@ -3,8 +3,8 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPinterest, FaTwitter, FaYoutu
 
 const SocialMedia = () => {
   return (
-    <div className='flex justify-center p-5'>
-        <div className=' flex gap-20 p-3'>
+    <div className='flex justify-center p-5 '>
+        <div className=' flex md:gap-20 p-3 flex-wrap justify-center gap-5'>
             <div className='p-4 hover:bg-gray-300 rounded-full'>
         <FaFacebookF size={30} />
             </div>

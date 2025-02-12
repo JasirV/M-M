@@ -7,6 +7,7 @@ import Image from "next/image"; // Import the Image component from Next.js
 import Img1 from "@/public/img/carouselHome/IMG_1606.JPG";
 import Img2 from "@/public/img/carouselHome/IMG_5526.JPG";
 import Img3 from "@/public/img/carouselHome/IMG_8678.JPG";
+import Link from "next/link";
 
 
 const carouselItems = [
@@ -76,9 +77,11 @@ const Carousel = () => {
             <p className="text-sm md:text-xl font-poppins">
               {item.description}
             </p>
+            <Link href='/about'>
             <button className="md:mt-5 font-garamond mt-4 px-4 md:px-6 py-2 bg-white text-black text:sm  md:text-lg font-medium rounded-full transition-all duration-300 ease-in-out transform hover:bg-black hover:text-white  hover:scale-105 active:scale-95">
               Show more
             </button>
+            </Link>
           </div>
         </div>
       ))}

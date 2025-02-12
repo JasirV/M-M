@@ -3,6 +3,7 @@ import React from 'react'
 import Img1 from '@/public/img/service/IMG_1380.JPG'
 import Img2 from '@/public/img/service/IMG_7052.JPG'
 import Img3 from '@/public/img/service/IMG_3832.JPG'
+import Link from 'next/link'
 const Service = () => {
   return (
     <div className=' mt-8'>
@@ -30,9 +31,11 @@ const Service = () => {
 
             {/* Button (Hidden Initially, Visible on Hover) */}
             <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-3">
+              <Link href="/service">
               <button className="px-4 py-2 bg-white text-black font-medium rounded-full hover:bg-black hover:text-white transition">
                 Explore
               </button>
+              </Link>
             </div>
           </div>
         </div>
