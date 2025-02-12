@@ -3,7 +3,7 @@ import React from 'react';
 
 const WeddingPhotography = ({ heading, img1, img2, img3, description, index }) => {
   return (
-    <div className={`w-full flex flex-col md:flex-row mt-10 items-center gap-10 justify-center p-4 px-6 md:px-20 ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
+    <div className={`w-full flex flex-col md:flex-row mt-10 items-center py-10 gap-10 justify-center p-4 px-6 md:px-20 ${index % 2 === 0 ? ' ' : 'md:flex-row-reverse '}`}>
       
       {/* Heading */}
       <div className="w-full md:w-1/3 text-center md:text-left">
@@ -15,13 +15,13 @@ const WeddingPhotography = ({ heading, img1, img2, img3, description, index }) =
 
       {/* Image Group */}
       <div className="flex flex-wrap md:flex-nowrap gap-4 md:gap-6 justify-center">
-        <div className="w-[250px] h-[400px] md:w-[350px] md:h-[600px] rounded-full relative">
+        <div className="w-[200px] h-[320px] md:w-[280px] md:h-[450px] rounded-full relative">
           <Image src={img1} alt="Wedding Image 1" fill className={`object-cover ${index % 2 === 0 ? 'rounded-full' : 'rounded-lg'}`} />
         </div>
-        <div className="w-[250px] h-[400px] md:w-[350px] md:h-[600px] relative">
+        <div className="w-[200px] h-[320px] md:w-[280px] md:h-[450px] relative">
           <Image src={img2} alt="Wedding Image 2" fill className={`object-cover ${index % 2 === 0 ? 'rounded-full' : 'rounded-lg'}`} />
         </div>
-        <div className="w-[250px] h-[400px] md:w-[350px] md:h-[600px] relative">
+        <div className="w-[200px] h-[320px] md:w-[280px] md:h-[450px] relative">
           <Image src={img3} alt="Wedding Image 3" fill className={`object-cover ${index % 2 === 0 ? 'rounded-full' : 'rounded-lg'}`} />
         </div>
       </div>

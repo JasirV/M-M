@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div className="relative h-40 md:h-72 w-full">
           <Image
-            src="https://i.shgcdn.com/b2b23020-fe95-464a-91f6-4ef945865a59/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+            src="https://i.pinimg.com/originals/d3/3f/b4/d33fb43ee18af93ad4316c2dea4ccc47.jpg"
             alt="Photo Contest"
             layout="fill"
             objectFit="cover"
