@@ -12,6 +12,7 @@ const Form = () => {
     event: "",
     message: "",
   });
+  const [result, setResult] = useState("");
 
   const events = [
     "Wedding Photography",
@@ -25,15 +26,50 @@ const Form = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+
+    const formPayload = new FormData();
+    Object.entries(formData).forEach(([key, value]) =>
+      formPayload.append(key, value)
+    );
+    formPayload.append(
+      "access_key",
+      process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
+    );
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formPayload,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully ✅");
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        event: "",
+        message: "",
+      });
+    } else {
+      console.error("Error:", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div className="md:h-[70vh] bg-black pb-5 md:pb-0 flex flex-col md:flex-row justify-center items-center">
       <div className="md:w-1/2 w-full h-full">
         <Image src={Img} className="w-full h-full object-cover" alt="Contact" />
       </div>
-      <div className="md:w-1/2 flex w-11/12  justify-center items-center">
-        <form className="  rounded-lg shadow-lg ">
+      <div className="md:w-1/2 flex w-11/12 justify-center items-center">
+        <form className="rounded-lg shadow-lg" onSubmit={onSubmit}>
           {/* Heading */}
-          <h2 className="text-xs text-center text-white font-garamond  font-bold tmb-6">
+          <h2 className="text-xs text-center text-white font-garamond font-bold tmb-6">
             FILE OUT THE FORM AND WELL BE IN TOUCH SOON!
           </h2>
 
@@ -124,13 +160,17 @@ const Form = () => {
 
           {/* Submit button */}
           <div className="flex justify-center">
-          <button
-            type="submit"
-            className=" text-center bg-gray-400 text-xs md:text-lg text-white py-2 md:px-2 w-1/3  font-light font-poppins hover:bg-gray-100 hover:text-black transition-colors"
+            <button
+              type="submit"
+              className="text-center bg-gray-400 text-xs md:text-lg text-white py-2 md:px-2 w-1/3 font-light font-poppins hover:bg-gray-100 hover:text-black transition-colors"
             >
-            SEND MESSAGE
-          </button>
-              </div>
+              SEND MESSAGE
+            </button>
+          </div>
+          {/* Showing the result status */}
+          {result && (
+            <p className="text-white text-center mt-4 font-poppins">{result}</p>
+          )}
         </form>
       </div>
     </div>
