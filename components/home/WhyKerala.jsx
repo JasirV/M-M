@@ -18,7 +18,7 @@ function WhyKerala() {
     <div className='flex justify-center'>
     <div className='w-4/5 md:w-3/4 mt-2 mb-2'>
     <Link href='/contact'>
-        <button className='px-6 py-2 rounded-full border-black border-2 hover:bg-black hover:text-white text-sm font-light font-poppins'>ENQUIRE NOW!</button>
+        <button className='px-6 py-2 rounded-full border-black dark:border-white border-2 hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black text-sm font-light font-poppins'>ENQUIRE NO!</button>
     </Link>
     </div>
     </div>

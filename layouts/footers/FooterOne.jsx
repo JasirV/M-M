@@ -8,22 +8,22 @@ const FooterOne = () => {
         <div className="">
           <ul className="list-none text-base leading-10">
             <li>
-              <Link href="/about" className="text-black hover:text-gray-700">
+              <Link href="/about" className=" hover:text-gray-700">
                 ABOUT US
               </Link>
             </li>
             <li>
-              <Link href="/service" className="text-black hover:text-gray-700">
+              <Link href="/service" className=" hover:text-gray-700">
                 SERVICES
               </Link>
             </li>
             <li>
-              <Link href="" className="text-black hover:text-gray-700">
+              <Link href="" className=" hover:text-gray-700">
                 ALBUMS
               </Link>
             </li>
             <li>
-              <Link href="" className="text-black hover:text-gray-700">
+              <Link href="" className=" hover:text-gray-700">
                 FAQ
               </Link>
             </li>
@@ -32,22 +32,22 @@ const FooterOne = () => {
         <div>
           <ul className="list-none text-base leading-10">
             <li>
-              <Link href="" className="text-black hover:text-gray-700">
+              <Link href="" className=" hover:text-gray-700">
                 BLOG
               </Link>
             </li>
             <li>
-              <Link href="" className="text-black hover:text-gray-700">
+              <Link href="" className=" hover:text-gray-700">
                 TEAM
               </Link>
             </li>
             <li>
-              <Link href="" className="text-black hover:text-gray-700">
+              <Link href="" className=" hover:text-gray-700">
                 PRIVACY POLICY
               </Link>
             </li>
             <li>
-              <Link href="" className="text-black hover:text-gray-700">
+              <Link href="" className=" hover:text-gray-700">
                 TERMS OF CONDITIONS
               </Link>
             </li>
@@ -56,22 +56,22 @@ const FooterOne = () => {
         <div>
         <ul className="list-none text-base leading-10">
               <li>
-                <Link href="/contact" className="text-black hover:text-gray-700">
+                <Link href="/contact" className=" hover:text-gray-700">
                   CONTACT US
                 </Link>
               </li>
               <li>
-                <Link href="#!" className="text-black hover:text-gray-700">
+                <Link href="#!" className=" hover:text-gray-700">
                   INSTAGRAM
                 </Link>
               </li>
               <li>
-                <Link href="#!" className="text-black hover:text-gray-700">
+                <Link href="#!" className=" hover:text-gray-700">
                   FACEBOOK
                 </Link>
               </li>
               <li>
-                <Link href="#!" className="text-black hover:text-gray-700">
+                <Link href="#!" className=" hover:text-gray-700">
                   TWITTER
                 </Link>
               </li>
