@@ -71,13 +71,13 @@ const HeaderOne = () => {
             About
           </Link>
           <div
-            className="relative cursor-pointer"
+            className="relative"
             onMouseEnter={() => setIsDropdownOpen(true)}
-            onMouseLeave={() => setIsDropdownOpen(false)}
+            
           >
             <button className="nav-link">Services</button>
             {isDropdownOpen && (
-              <div className="absolute left-0 top-full mt-2 bg-white shadow-lg p-2 rounded-md w-56">
+              <div className="absolute left-0 top-full mt-2 bg-white dark:bg-black shadow-lg p-2 rounded-md w-56" onMouseLeave={() => setIsDropdownOpen(false)}>
                 <Link href="/services/wedding" className="dropdown-item" onClick={() => handleLinkClick("/services/wedding")}>
                   Wedding Photography
                 </Link>
@@ -118,7 +118,7 @@ const HeaderOne = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="sm:hidden absolute top-full left-0 right-0 bg-white shadow-lg p-4">
+        <div className="sm:hidden absolute top-full left-0 right-0 bg-white dark:bg-black shadow-lg p-4">
           <Link href="/" className="mobile-link" onClick={() => handleLinkClick("/")}>
             Home
           </Link>

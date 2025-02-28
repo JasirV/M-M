@@ -8,7 +8,7 @@
 @import 'swiper/css/navigation';
 
 .nav-link {
-  @apply  hover:text-black transition-all;
+  @apply   transition-all;
 }
 
 .dropdown-item {
@@ -16,7 +16,7 @@
 }
 
 .mobile-link {
-  @apply block py-2 px-4 border-b text-gray-700 hover:text-black transition-all;
+  @apply block py-2 px-4 border-b text-gray-700 dark:text-white hover:text-black transition-all;
 }
 
 .mobile-dropdown-item {
