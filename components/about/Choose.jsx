@@ -58,10 +58,10 @@ const Choose = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center"
+              className=" p-6 rounded-2xl shadow-lg dark:shadow-orange-300 dark:shadow-sm flex flex-col items-center text-center"
             >
               <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-lg font-poppins font-semibold text-gray-900">
+              <h3 className="text-lg font-poppins font-semibold text-gray-900 dark:text-white">
                 {feature.title}
               </h3>
               <p className="text-gray-600 font-poppins mt-2">{feature.description}</p>
