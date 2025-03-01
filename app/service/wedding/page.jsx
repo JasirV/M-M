@@ -11,7 +11,7 @@ const page = () => {
         <Handler/>
         <Footer/>
     </div>
-  )
+  ) 
 }
 
 export default page
