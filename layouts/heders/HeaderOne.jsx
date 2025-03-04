@@ -78,19 +78,19 @@ const HeaderOne = () => {
             <button className="nav-link">Services</button>
             {isDropdownOpen && (
               <div className="absolute left-0 top-full mt-2 bg-white dark:bg-black shadow-lg p-2 rounded-md w-56" onMouseLeave={() => setIsDropdownOpen(false)}>
-                <Link href="/services/wedding" className="dropdown-item" onClick={() => handleLinkClick("/services/wedding")}>
+                <Link href="/service/wedding" className="dropdown-item" onClick={() => handleLinkClick("/services/wedding")}>
                   Wedding Photography
                 </Link>
-                <Link href="/services/pre-wedding" className="dropdown-item" onClick={() => handleLinkClick("/services/pre-wedding")}>
+                <Link href="/service/pre-wedding" className="dropdown-item" onClick={() => handleLinkClick("/services/pre-wedding")}>
                   Pre-Wedding Shoots
                 </Link>
-                <Link href="/services/candid" className="dropdown-item" onClick={() => handleLinkClick("/services/candid")}>
+                <Link href="/service/candid" className="dropdown-item" onClick={() => handleLinkClick("/services/candid")}>
                   Candid Photography
                 </Link>
-                <Link href="/services/videography" className="dropdown-item" onClick={() => handleLinkClick("/services/videography")}>
+                <Link href="/service/videography" className="dropdown-item" onClick={() => handleLinkClick("/services/videography")}>
                   Wedding Videography
                 </Link>
-                <Link href="/services/destination" className="dropdown-item" onClick={() => handleLinkClick("/services/destination")}>
+                <Link href="/service/destination" className="dropdown-item" onClick={() => handleLinkClick("/services/destination")}>
                   Destination Weddings
                 </Link>
               </div>
