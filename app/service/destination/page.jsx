@@ -35,8 +35,8 @@ const page = () => {
               alt="Couple 2"
               className=" w-full object-cover"
             />
-            <h2 className="text-4xl font-garamond text-center font-light  mt-10">DESTINATION WEDDING</h2>
-            <p className='text-xs font-extralight font-mono text-center'>"Our candid wedding photographers specialize in capturing genuine, unguarded moments. From spontaneous laughter to quiet glances, we ensure your wedding album is filled with natural and heartfelt emotions"</p>
+            <h2 className="md:text-4xl text-sm font-garamond text-center font-light  mt-10">DESTINATION WEDDING</h2>
+            <p className='text-xs font-extralight font-mono text-center hidden md:flex'>"Our candid wedding photographers specialize in capturing genuine, unguarded moments. From spontaneous laughter to quiet glances, we ensure your wedding album is filled with natural and heartfelt emotions"</p>
           </div>
 
           {/* Third Image (Large) */}

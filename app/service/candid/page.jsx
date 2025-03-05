@@ -16,7 +16,7 @@ const page = () => {
         {/* Image Cards Container */}
         <div className="flex justify-center gap-6 w-full px-12">
           {/* First Image (Large) */}
-          <div className="w-1/3 ">
+          <div className="md:w-1/3 ">
             <Image
               src={img1}
               width={400}
@@ -27,7 +27,7 @@ const page = () => {
           </div>
 
           {/* Second Image (Smaller) */}
-          <div className="w-1/4 ">
+          <div className="md:w-1/4 ">
             <Image
               src={img2}
               width={300}
@@ -35,11 +35,11 @@ const page = () => {
               alt="Couple 2"
               className=" w-full object-cover"
             />
-            <h2 className="text-6xl font-garamond text-center font-light  mt-10">CANDID STORIE</h2>
+            <h2 className="md:text-6xl  font-garamond text-center font-light  mt-10">CANDID STORIE</h2>
           </div>
 
           {/* Third Image (Large) */}
-          <div className="w-1/3 ">
+          <div className="md:w-1/3 ">
             <Image
               src={img1}
               width={400}

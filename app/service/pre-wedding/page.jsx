@@ -63,7 +63,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center text-2xl capitalize text-brown mt-2">
+      <div className="flex items-center justify-center text-2xl capitalize text-brown mt-2 mb-6 md:mb-0">
       <img src="https://moments-host.surge.sh/images/Vector%202.png" alt="Left Vector" />
       <span className="mx-2 text-sm md:text-4xl  sm:mx-3">Our Drops</span>
       <img src="https://moments-host.surge.sh/images/Vector%201.png" alt="Right Vector" />

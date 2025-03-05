@@ -13,7 +13,7 @@ const Grid = () => {
       ];
     
       return (
-        <div className=" p-10 px-40">
+        <div className=" md:p-10 md:px-40">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {items.map((item, index) => (
           <div key={index} className=" overflow-hidden  flex flex-col justify-center items-center">
