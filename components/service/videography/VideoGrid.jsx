@@ -33,6 +33,8 @@ const VideoGrid = () => {
                 src={item.img}
                 alt={item.title}
                 fill
+                placeholder="blur" 
+                loading="lazy"
                 className="object-cover transition-transform duration-300 hover:scale-105"
               />
             </div>

@@ -27,6 +27,8 @@ const Photographer = () => {
             alt="Wedding Photographer"
             layout="fill"
             className="rounded-full shadow-lg object-cover"
+            placeholder="blur" 
+            loading="lazy"
           />
         </div>
 

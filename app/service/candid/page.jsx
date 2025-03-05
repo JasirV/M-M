@@ -23,6 +23,8 @@ const page = () => {
               height={500}
               alt="Couple 1"
               className=" w-full object-cover"
+              placeholder="blur" 
+              loading="lazy"
             />
           </div>
 
@@ -34,6 +36,8 @@ const page = () => {
               height={400}
               alt="Couple 2"
               className=" w-full object-cover"
+              placeholder="blur" 
+              loading="lazy"
             />
             <h2 className="md:text-6xl  font-garamond text-center font-light  mt-10">CANDID STORIE</h2>
           </div>
@@ -46,6 +50,8 @@ const page = () => {
               height={500}
               alt="Couple 3"
               className=" w-full object-cover"
+              placeholder="blur" 
+              loading="lazy"
             />
           </div>
         </div>

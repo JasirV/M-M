@@ -9,6 +9,8 @@ const Banner = () => {
             alt="Photo Contest"
             layout="fill"
             objectFit="cover"
+            placeholder="blur" 
+            loading="lazy"
           />
           {/* Centered "about" text */}
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40  flex-col">
