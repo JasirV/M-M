@@ -23,6 +23,7 @@ const page = () => {
               height={500}
               alt="Couple 1"
               className=" w-full object-cover"
+              placeholder="blur" 
             />
           </div>
 
@@ -34,6 +35,7 @@ const page = () => {
               height={400}
               alt="Couple 2"
               className=" w-full object-cover"
+              placeholder="blur" 
             />
             <h2 className="md:text-4xl text-sm font-garamond text-center font-light  mt-10">DESTINATION WEDDING</h2>
             <p className='text-xs font-extralight font-mono text-center hidden md:flex'>"Our candid wedding photographers specialize in capturing genuine, unguarded moments. From spontaneous laughter to quiet glances, we ensure your wedding album is filled with natural and heartfelt emotions"</p>
@@ -47,6 +49,7 @@ const page = () => {
               height={500}
               alt="Couple 3"
               className=" w-full object-cover"
+              placeholder="blur" 
             />
           </div>
         </div>

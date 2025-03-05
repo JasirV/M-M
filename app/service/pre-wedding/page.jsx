@@ -43,6 +43,7 @@ const page = () => {
               alt="Wedding Image 1"
               fill
               className={`object-cover rounded-full `}
+              placeholder="blur" 
             />
           </div>
           <div className="w-[200px] h-[320px] md:w-[280px] md:h-[450px] relative">
@@ -51,6 +52,7 @@ const page = () => {
               alt="Wedding Image 2"
               fill
               className={`object-cover  rounded-full `}
+              placeholder="blur" 
             />
           </div>
           <div className="w-[200px] h-[320px] md:w-[280px] md:h-[450px] relative">
@@ -59,6 +61,7 @@ const page = () => {
               alt="Wedding Image 3"
               fill
               className={`object-cover rounded-full `}
+              placeholder="blur" 
             />
           </div>
         </div>

@@ -23,6 +23,7 @@ const page = () => {
               height={500}
               alt="Couple 1"
               className=" w-full object-cover"
+              placeholder="blur" 
             />
           </div>
 
@@ -34,6 +35,7 @@ const page = () => {
               height={400}
               alt="Couple 2"
               className=" w-full object-cover"
+              placeholder="blur" 
             />
             <h2 className="md:text-6xl text-lg font-garamond text-center font-light  mt-10">WEDDING STORIE</h2>
             <p className='text-xs font-extralight font-mono text-center hidden md:flex'>"Our wedding photography services beautifully capture every moment of your special day, preserving emotions, joy, and elegance. From the bride’s radiant smile to heartfelt tears, we tell your love story through vibrant and timeless images."</p>
@@ -48,6 +50,7 @@ const page = () => {
               height={500}
               alt="Couple 3"
               className=" w-full object-cover"
+              placeholder="blur" 
             />
           </div>
         </div>
