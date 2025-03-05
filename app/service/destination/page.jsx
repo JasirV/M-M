@@ -16,7 +16,7 @@ const page = () => {
         {/* Image Cards Container */}
         <div className="flex justify-center gap-6 w-full px-12">
           {/* First Image (Large) */}
-          <div className="md:w-1/3 ">
+          <div className="w-1/3 ">
             <Image
               src={img1}
               width={400}
@@ -27,7 +27,7 @@ const page = () => {
           </div>
 
           {/* Second Image (Smaller) */}
-          <div className="md:w-1/4 ">
+          <div className="w-1/4 ">
             <Image
               src={img2}
               width={300}
@@ -35,13 +35,12 @@ const page = () => {
               alt="Couple 2"
               className=" w-full object-cover"
             />
-            <h2 className="md:text-6xl text-lg font-garamond text-center font-light  mt-10">WEDDING STORIE</h2>
-            <p className='text-xs font-extralight font-mono text-center hidden md:flex'>"Our wedding photography services beautifully capture every moment of your special day, preserving emotions, joy, and elegance. From the bride’s radiant smile to heartfelt tears, we tell your love story through vibrant and timeless images."</p>
-
+            <h2 className="md:text-4xl text-sm font-garamond text-center font-light  mt-10">DESTINATION WEDDING</h2>
+            <p className='text-xs font-extralight font-mono text-center hidden md:flex'>"Our candid wedding photographers specialize in capturing genuine, unguarded moments. From spontaneous laughter to quiet glances, we ensure your wedding album is filled with natural and heartfelt emotions"</p>
           </div>
 
           {/* Third Image (Large) */}
-          <div className="md:w-1/3 ">
+          <div className="w-1/3 ">
             <Image
               src={img1}
               width={400}

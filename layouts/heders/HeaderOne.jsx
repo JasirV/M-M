@@ -2,14 +2,17 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";  // ✅ Import usePathname
 import { FaMoon, FaSun } from "react-icons/fa";
+
 const HeaderOne = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isNavVisible, setIsNavVisible] = useState(true);
-  const [currentRoute, setCurrentRoute] = useState("/");
   const [darkMode, setDarkMode] = useState(false);
+
+  const currentRoute = usePathname();  // ✅ Dynamically get the current route
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -30,8 +33,6 @@ const HeaderOne = () => {
     }
   };
 
-  
-  // Hide Navbar on Scroll Down
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
@@ -46,13 +47,8 @@ const HeaderOne = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
-  const handleLinkClick = (href) => {
-    setCurrentRoute(href);
-    setIsMobileMenuOpen(false);
-  };
-
   return (
-    <nav className={`fixed top-0 left-0 w-full  shadow-md transition-transform duration-300 ${isNavVisible ? "translate-y-0" : "-translate-y-full"} ${darkMode?'bg-black':'bg-white'} z-50`}>
+    <nav className={`fixed top-0 left-0 w-full shadow-md transition-transform duration-300 ${isNavVisible ? "translate-y-0" : "-translate-y-full"} ${darkMode ? 'bg-black' : 'bg-white'} z-50`}>
       <div className="flex justify-between items-center px-6 py-4">
         {/* Logo */}
         <div className="flex items-center gap-2">
@@ -64,50 +60,48 @@ const HeaderOne = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden sm:flex gap-6">
-          <Link href="/" className={`nav-link ${currentRoute === "/" ? " font-semibold" : ""}`} onClick={() => handleLinkClick("/")}>
+          <Link href="/" className={`nav-link ${currentRoute === "/" ? "font-semibold" : ""}`}>
             Home
           </Link>
-          <Link href="/about" className={`nav-link ${currentRoute === "/about" ? " font-semibold" : ""}`} onClick={() => handleLinkClick("/about")}>
+          <Link href="/about" className={`nav-link ${currentRoute === "/about" ? "font-semibold" : ""}`}>
             About
           </Link>
-          <div
-            className="relative"
-            onMouseEnter={() => setIsDropdownOpen(true)}
-            
-          >
-            <button className="nav-link">Services</button>
+          <div className="relative" onMouseEnter={() => setIsDropdownOpen(true)}>
+            <button className={`nav-link ${["/service/wedding", "/service/candid", "/service/videography", "/service/destination"].includes(currentRoute) ? "font-semibold" : ""}`}>
+              Services
+            </button>
             {isDropdownOpen && (
               <div className="absolute left-0 top-full mt-2 bg-white dark:bg-black shadow-lg p-2 rounded-md w-56" onMouseLeave={() => setIsDropdownOpen(false)}>
-                <Link href="/service/wedding" className="dropdown-item" onClick={() => handleLinkClick("/services/wedding")}>
+                <Link href="/service/wedding" className="dropdown-item">
                   Wedding Photography
                 </Link>
-                <Link href="/service/pre-wedding" className="dropdown-item" onClick={() => handleLinkClick("/services/pre-wedding")}>
+                <Link href="/service/pre-wedding" className="dropdown-item">
                   Pre-Wedding Shoots
                 </Link>
-                <Link href="/service/candid" className="dropdown-item" onClick={() => handleLinkClick("/services/candid")}>
+                <Link href="/service/candid" className="dropdown-item">
                   Candid Photography
                 </Link>
-                <Link href="/service/videography" className="dropdown-item" onClick={() => handleLinkClick("/services/videography")}>
+                <Link href="/service/videography" className="dropdown-item">
                   Wedding Videography
                 </Link>
-                <Link href="/service/destination" className="dropdown-item" onClick={() => handleLinkClick("/services/destination")}>
+                <Link href="/service/destination" className="dropdown-item">
                   Destination Weddings
                 </Link>
               </div>
             )}
           </div>
-          <Link href="/contact" className={`nav-link ${currentRoute === "/contact" ? " font-semibold" : ""}`} onClick={() => handleLinkClick("/contact")}>
+          <Link href="/contact" className={`nav-link ${currentRoute === "/contact" ? "font-semibold" : ""}`}>
             Contact
           </Link>
         </div>
+
+        {/* Dark Mode Toggle */}
         <div>
-        <button
-        onClick={toggleDarkMode}
-        className="p-2 rounded-full bg-gray-200 dark:bg-gray-900"
-      >
-        {darkMode ? <FaSun className="text-white" /> : <FaMoon className="text-gray-900" />}
-      </button>
+          <button onClick={toggleDarkMode} className="p-2 rounded-full bg-gray-200 dark:bg-gray-900">
+            {darkMode ? <FaSun className="text-white" /> : <FaMoon className="text-gray-900" />}
+          </button>
         </div>
+
         {/* Mobile Menu Button */}
         <button className="sm:hidden p-2 focus:outline-none" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
           <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -119,10 +113,10 @@ const HeaderOne = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="sm:hidden absolute top-full left-0 right-0 bg-white dark:bg-black shadow-lg p-4">
-          <Link href="/" className="mobile-link" onClick={() => handleLinkClick("/")}>
+          <Link href="/" className="mobile-link">
             Home
           </Link>
-          <Link href="/about" className="mobile-link" onClick={() => handleLinkClick("/about")}>
+          <Link href="/about" className="mobile-link">
             About
           </Link>
           <div className="relative">
@@ -131,25 +125,25 @@ const HeaderOne = () => {
             </button>
             {isDropdownOpen && (
               <div className="mt-2 bg-gray-100 shadow-md rounded-md">
-                <Link href="/services/wedding" className="mobile-dropdown-item" onClick={() => handleLinkClick("/services/wedding")}>
+                <Link href="/service/wedding" className="mobile-dropdown-item">
                   Wedding Photography
                 </Link>
-                <Link href="/services/pre-wedding" className="mobile-dropdown-item" onClick={() => handleLinkClick("/services/pre-wedding")}>
+                <Link href="/service/pre-wedding" className="mobile-dropdown-item">
                   Pre-Wedding Shoots
                 </Link>
-                <Link href="/services/candid" className="mobile-dropdown-item" onClick={() => handleLinkClick("/services/candid")}>
+                <Link href="/service/candid" className="mobile-dropdown-item">
                   Candid Photography
                 </Link>
-                <Link href="/services/videography" className="mobile-dropdown-item" onClick={() => handleLinkClick("/services/videography")}>
+                <Link href="/service/videography" className="mobile-dropdown-item">
                   Wedding Videography
                 </Link>
-                <Link href="/services/destination" className="mobile-dropdown-item" onClick={() => handleLinkClick("/services/destination")}>
+                <Link href="/service/destination" className="mobile-dropdown-item">
                   Destination Weddings
                 </Link>
               </div>
             )}
           </div>
-          <Link href="/contact" className="mobile-link" onClick={() => handleLinkClick("/contact")}>
+          <Link href="/contact" className="mobile-link">
             Contact
           </Link>
         </div>
