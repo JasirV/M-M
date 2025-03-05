@@ -44,7 +44,6 @@ const page = () => {
               fill
               className={`object-cover rounded-full `}
               placeholder="blur" 
-              loading="lazy"
             />
           </div>
           <div className="w-[200px] h-[320px] md:w-[280px] md:h-[450px] relative">
@@ -54,7 +53,6 @@ const page = () => {
               fill
               className={`object-cover  rounded-full `}
               placeholder="blur" 
-              loading="lazy"
             />
           </div>
           <div className="w-[200px] h-[320px] md:w-[280px] md:h-[450px] relative">
@@ -64,7 +62,6 @@ const page = () => {
               fill
               className={`object-cover rounded-full `}
               placeholder="blur" 
-              loading="lazy"
             />
           </div>
         </div>

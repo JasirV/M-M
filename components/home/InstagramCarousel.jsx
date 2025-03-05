@@ -202,7 +202,6 @@ const InstagramCarousel = () => {
                   style={{ objectFit: "cover" }}
                   quality={40}
                   className="w-full h-full"
-                  loading="lazy"
                   // placeholder="blur"
                   // blurDataURL="https://www.sunhome.ru/i/wallpapers/51/razmitii-sine-goluboi-fon.orig.jpg"
                   // onError={(e) => {

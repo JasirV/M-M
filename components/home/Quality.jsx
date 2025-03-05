@@ -40,7 +40,6 @@ const Quality = () => {
                   layout="fill"
                   objectFit="cover" // Ensures image covers the area
                   placeholder="blur" 
-                  loading="lazy"
                 />
                 {/* Play button overlay */}
                 <div className="w-full  opacity-0 hover:opacity-100 ">

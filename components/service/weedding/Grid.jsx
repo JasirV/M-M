@@ -24,7 +24,6 @@ const Grid = () => {
                 layout="fill"
                 objectFit="cover"
                 placeholder="blur" 
-              loading="lazy"
                 className="transition-transform duration-300 hover:scale-110"
               />
             </div>

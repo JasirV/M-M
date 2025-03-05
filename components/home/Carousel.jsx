@@ -64,7 +64,6 @@ const Carousel = () => {
               quality={100} // Adjust image quality
               priority={index === 0} // Prioritize loading the first image
               placeholder="blur" 
-              loading="lazy"
             />
           </div>
 

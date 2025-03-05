@@ -29,7 +29,6 @@ const About = () => {
             //   style={{ objectFit: "cover" }} // Ensure the image covers the entire area
             quality={100} // Adjust image quality
             placeholder="blur" 
-            loading="lazy"
           />
         </div>
         <div className="md:w-7/12 w-full pl-8">
