@@ -10,6 +10,7 @@ const Grid = () => {
         { img:img2, title: "YAMI & GURU", subtitle: "Destination: Chennai" },
         { img: img3, title: "SHERLIN & LINAKAR", subtitle: "Destination: Fort Kochi" },
         { img:img4, title: "ANNA & JOHN", subtitle: "Destination: Goa" },
+        { img:img4, title: "ANNA & JOHN", subtitle: "Destination: Goa" },
       ];
     
       return (
@@ -22,7 +23,7 @@ const Grid = () => {
                 src={item.img}
                 alt={item.title}
                 layout="fill"
-                objectFit="cover"
+                objectFit="cover"  
                 placeholder="blur" 
                 className="transition-transform duration-300 hover:scale-110"
               />
