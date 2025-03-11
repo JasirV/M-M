@@ -10,7 +10,6 @@ const Grid = () => {
         { img:img2, title: "YAMI & GURU", subtitle: "Destination: Chennai" },
         { img: img3, title: "SHERLIN & LINAKAR", subtitle: "Destination: Fort Kochi" },
         { img:img4, title: "ANNA & JOHN", subtitle: "Destination: Goa" },
-        { img:img4, title: "ANNA & JOHN", subtitle: "Destination: Goa" },
       ];
     
       return (
